@@ -33,7 +33,7 @@ Each of these features from the seed playlist get averaged and converted to an a
 
 The audio features for each song in the second playlist are converted into arrays (once again, vectors).
 
-Distance between the average seed array and each array in the second playlist is calculated (using Euclidian Distance, not Cosine Similarity since magnitude matters). Here's an image if you are interested. 
+Distance between the average seed array and each array in the second playlist is calculated (using Euclidian Distance, not Cosine Similarity since magnitude matters). Shorter the distance = More similar the song. Here's an image if you are interested. 
 
 ![image](https://user-images.githubusercontent.com/49047523/211133338-72072fc6-2d61-4ea1-b43a-57972edcb0e1.png)
 
