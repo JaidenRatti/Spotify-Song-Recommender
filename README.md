@@ -36,8 +36,7 @@ The audio features for each song in the second playlist are converted into array
 Distance between the average seed array and each array in the second playlist is calculated (using Euclidian Distance, not Cosine Similarity since magnitude matters). Shorter the distance = More similar the song. Here's an image if you are interested. 
 
 ![image](https://user-images.githubusercontent.com/49047523/211133338-72072fc6-2d61-4ea1-b43a-57972edcb0e1.png)
-
-[source](https://medium.com/@sasi24/cosine-similarity-vs-euclidean-distance-e5d9a9375fc8)
+[Source](https://medium.com/@sasi24/cosine-similarity-vs-euclidean-distance-e5d9a9375fc8)
 
 
 The songs in the second playlist are then sorted by distance (similarity) to the first playlist. User can then select how many songs they want recommended from this list. 
