@@ -37,6 +37,8 @@ Distance between the average seed array and each array in the second playlist is
 
 ![image](https://user-images.githubusercontent.com/49047523/211133338-72072fc6-2d61-4ea1-b43a-57972edcb0e1.png)
 
+[source](https://medium.com/@sasi24/cosine-similarity-vs-euclidean-distance-e5d9a9375fc8)
+
 
 The songs in the second playlist are then sorted by distance (similarity) to the first playlist. User can then select how many songs they want recommended from this list. 
 
