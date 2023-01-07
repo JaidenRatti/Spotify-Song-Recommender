@@ -44,5 +44,7 @@ The songs in the second playlist are then sorted by distance (similarity) to the
 ## Additions Currently Working on ##
 
 Let users add a song link instead of seed playlist
+
 A separate program that takes two playlists or songs and neatly visualizes the differences in different audio features
+
 Write documentation detailing how users (you, reading this) can set up the Spotify API and use it
