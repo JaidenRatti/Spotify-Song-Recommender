@@ -27,7 +27,7 @@ Spotify currently recommends a few songs at the bottom of a playlist, yet this i
 
 ## How does it work? (High-level) ##
 
-All songs in the seed playlist are converted to a df with unique audio features and weights associated to each feature thanks to the Spotify API (i.e danceability, valence, see the full list [here](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features). 
+All songs in the seed playlist are converted to a df with unique audio features and weights associated to each feature thanks to the Spotify API (i.e danceability, valence, see the full list [here](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)).
 
 Each of these features from the seed playlist get averaged and converted to an array (essentially a vector). 
 
