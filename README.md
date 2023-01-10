@@ -2,13 +2,15 @@
 
 ## What is this? ##
 
-Recommendation.ipynb recommends songs by taking in two public Spotify playlist links. 
+Recommendation.ipynb recommends songs by taking in two public Spotify links. 
 
-The first playlist is the 'seed' playlist (the one you want to add songs to)
+The first link is either a 
+- playlist: this is the 'seed' playlist (the one you want to add songs to)
+- song: this is the 'seed' song (you want to find songs similar to this)
 
-The second playlist is a playlist that you want to extract songs from and add to your playlist. 
+The second playlist is a playlist that you want to extract songs from to add to your 'seed' playlist or see what is similar to your 'seed' song
 
-The program will then recommend the most similar songs (an arbitrary amount) from the second playlist that match the vibe of your 'seed' playlist.
+The program will then recommend the most similar songs (an arbitrary amount) from the second playlist that match the vibe of your 'seed' entry.
 
 
 ## What would it be used for? ## 
@@ -16,6 +18,8 @@ The program will then recommend the most similar songs (an arbitrary amount) fro
 Know a friend with a long and unorganized playlist that you want to take songs from but don't have the time to sort through?
 
 Want to listen to music from a new artist but don't know which songs you'd like?
+
+Really like a specific song and want to find new songs in other playlists like that one?
 
 Curious how similar your music tastes are to another playlist?
 
@@ -27,9 +31,9 @@ Spotify currently recommends a few songs at the bottom of a playlist, yet this i
 
 ## How does it work? (High-level) ##
 
-All songs in the seed playlist are converted to a df with unique audio features and weights associated to each feature thanks to the Spotify API (i.e danceability, valence, see the full list [here](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)).
+All songs in the seed playlist/song are converted to a df with unique audio features and weights associated to each feature thanks to the Spotify API (i.e danceability, valence, see the full list [here](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)).
 
-Each of these features from the seed playlist get averaged and converted to an array (essentially a vector). 
+Each of these features from the seed entry get averaged and converted to an array (essentially a vector). 
 
 The audio features for each song in the second playlist are converted into arrays (once again, vectors).
 
@@ -44,8 +48,6 @@ The songs in the second playlist are then sorted by distance (similarity) to the
 
 ## Additions Currently Working on ##
 
-Let users add a song link instead of seed playlist
+Let users add a song link instead of seed playlist :white_check_mark:
 
 A separate program that takes two playlists or songs and neatly visualizes the differences in different audio features
-
-Write documentation detailing how users (you, reading this) can set up the Spotify API and use it
